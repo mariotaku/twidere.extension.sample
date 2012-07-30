@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.mariotaku.twidere.extension.sample"
+	android:versionCode="1"
+	android:versionName="1.0">
+
+	<uses-sdk
+		android:minSdkVersion="8"
+		android:targetSdkVersion="15"/>
+
+	<application
+		android:description="@string/description"
+		android:label="Twidere Sample Extension">
+		<activity
+			android:name=".SampleStatusExtensionActivity"
+			android:label="Sample Status Extension">
+			<intent-filter>
+				<action android:name="org.mariotaku.twidere.EXTENSION_OPEN_STATUS"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".SampleUserExtensionActivity"
+			android:label="Sample User Extension">
+			<intent-filter>
+				<action android:name="org.mariotaku.twidere.EXTENSION_OPEN_USER"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".SampleUserListExtensionActivity"
+			android:label="Sample User List Extension">
+			<intent-filter>
+				<action android:name="org.mariotaku.twidere.EXTENSION_OPEN_USER_LIST"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".SampleSettingsActivity"
+			android:label="Sample Extension Settings">
+			<intent-filter>
+				<action android:name="org.mariotaku.twidere.EXTENSION_SETTINGS"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>
