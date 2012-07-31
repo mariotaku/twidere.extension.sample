@@ -14,14 +14,17 @@ public abstract class BaseActivity<Data> extends Activity {
 
 	public abstract String getDescription();
 
+	public int getContentViewId() {
+		return R.layout.activity_main;
+	}
+	
 	@Override
 	public final void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(getContentViewId());
 		final TextView descripion = (TextView) findViewById(R.id.description);
 		descripion.setText(getDescription());
 		final TextView content = (TextView) findViewById(R.id.content);
-		content.setMovementMethod(LinkMovementMethod.getInstance());
 		final Bundle extras = getIntent().getExtras();
 		if (extras == null) return;
 		final Data data = getData();
