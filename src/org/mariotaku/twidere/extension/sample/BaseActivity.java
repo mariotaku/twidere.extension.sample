@@ -5,7 +5,6 @@ import java.lang.reflect.Modifier;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
 public abstract class BaseActivity<Data> extends Activity {

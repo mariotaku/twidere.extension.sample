@@ -15,12 +15,10 @@ public class SampleComposeExtensionActivity extends BaseActivity<ComposingStatus
 		switch (view.getId()) {
 			case R.id.replace_text: {
 				Twidere.replaceComposeActivityText(this, "Text replaced by extension");
-				finish();
 				break;
 			}
 			case R.id.append_text: {
 				Twidere.appendComposeActivityText(this, "Text append from extension");
-				finish();
 				break;
 			}
 		}

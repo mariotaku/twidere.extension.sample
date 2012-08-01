@@ -9,6 +9,7 @@
 
 	<application
 		android:description="@string/description"
+		android:icon="@drawable/ic_launcher"
 		android:label="Twidere Sample Extension">
 		<activity
 			android:name=".SampleStatusExtensionActivity"
